@@ -6,7 +6,9 @@
   "homepage": "https://oleksandr-shapovaliuk.github.io/goit-js-hw-13-image-finder",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
+    "gh-pages": "^3.2.3",
     "material-design-icons": "^3.0.1"
   }
 }
